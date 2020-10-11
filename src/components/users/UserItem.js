@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Class component
@@ -23,9 +24,9 @@ const UserItem = ({ user: { id, login, avatar_url, html_url } }) => {
         style={{ width: '100px' }}
       />
       <h3>{login}</h3>
-      <a href={html_url} className='btn btn-dark btn-sm my-1'>
+      <Link to={`/user/${login}`} className='btn btn-dark btn-sm my-1'>
         More
-      </a>
+      </Link>
     </div>
   );
 };

@@ -28,10 +28,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #666;
-}
-
 ul {
   list-style: none;
 }
