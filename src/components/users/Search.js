@@ -7,19 +7,25 @@ class Search extends Component {
   };
 
   static propTypes = {
-    searchUsers: PropTypes.func.isRequired
+    searchUsers: PropTypes.func.isRequired,
+    clearUsers: PropTypes.func.isRequired,
+    showClear: PropTypes.bool.isRequired
   };
 
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state.searchQuery);
-    // using props to pass text to the upper level (not recommended)
-    this.props.searchUsers(this.state.searchQuery);
-    this.setState({ searchQuery: '' }); // clear form
+    if (this.state.searchQuery === '') {
+      this.props.setAlert('Please provide a value to search.', 'light');
+    } else {
+      // using props to pass text to the upper level (not recommended)
+      this.props.searchUsers(this.state.searchQuery);
+      this.setState({ searchQuery: '' }); // clear form
+    }
   };
 
   render() {
+    const { clearUsers, showClear } = this.props;
     return (
       <div>
         <form className='form' onSubmit={this.handleSubmit}>
@@ -30,11 +36,20 @@ class Search extends Component {
             value={this.state.searchQuery}
             onChange={this.handleChange}
           />
-          <input
-            type='submit'
-            value='search'
-            className='btn btn-dark btn-block'
-          />
+          <div className='text-center'>
+            <button type='submit' className='btn btn-dark'>
+              Search
+            </button>
+            {showClear && (
+              <button
+                type='button'
+                className='btn btn-light'
+                onClick={clearUsers}
+              >
+                Clear
+              </button>
+            )}
+          </div>
         </form>
       </div>
     );

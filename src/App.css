@@ -4,7 +4,7 @@
 :root {
   --primary-color: #008891;
   --dark-color: #373a40;
-  --light-color: #e7e7de;
+  --light-color: #eee;
   --danger-color: #d7385e;
   --success-color: #03c4a1;
 }
@@ -200,7 +200,7 @@ img {
   display: inline-block;
   background: var(--light-color);
   color: #333;
-  padding: 0.4rem 1.3rem;
+  padding: 0.4rem 2rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
