@@ -18,9 +18,9 @@ class Search extends Component {
     if (this.state.searchQuery === '') {
       this.props.setAlert('Please provide a value to search.', 'light');
     } else {
-      // using props to pass text to the upper level (not recommended)
+      /* using props to pass text to the upper level (not recommended) */
       this.props.searchUsers(this.state.searchQuery);
-      this.setState({ searchQuery: '' }); // clear form
+      this.setState({ searchQuery: '' }); /* clear form */
     }
   };
 

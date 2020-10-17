@@ -23,17 +23,17 @@ class App extends Component {
     alert: null
   };
 
-  // async componentWillMount() {
-  //   this.setState({ loading: true });
-  //   const res = await axios.get(
-  //     `http://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-  //   );
-  //   this.setState({ users: res.data, loading: false });
+  /* async componentWillMount() {
+  this.setState({ loading: true });
+    const res = await axios.get(
+      `http://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+    );
+    this.setState({ users: res.data, loading: false });
 
-  // axios.get('http://api.github.com/users').then((res) => {
-  //   this.setState({ users: res.data });
-  // });
-  // }
+  axios.get('http://api.github.com/users').then((res) => {
+    this.setState({ users: res.data });
+   });
+  }*/
 
   searchUsers = async (query) => {
     this.setState({ loading: true });
@@ -70,14 +70,15 @@ class App extends Component {
   render() {
     const { users, user, repos, loading, alert } = this.state;
 
-    //* WITHOUT JSX
-    // return React.createElement(
-    //   'div',
-    //   { class: 'App' },
-    //   React.createElement('h1', null, 'Title')
-    // );
+    /* WITHOUT JSX */
 
-    //* WITH JSX
+    /*return React.createElement(
+      'div',
+      { class: 'App' },
+      React.createElement('h1', null, 'Title')
+    );*/
+
+    /* WITH JSX */
     return (
       <Router>
         <div className='App'>
