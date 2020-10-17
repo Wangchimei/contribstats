@@ -72,11 +72,11 @@ class App extends Component {
 
     /* WITHOUT JSX */
 
-    /*return React.createElement(
+    /* return React.createElement(
       'div',
       { class: 'App' },
       React.createElement('h1', null, 'Title')
-    );*/
+    ); */
 
     /* WITH JSX */
     return (

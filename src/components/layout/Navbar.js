@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types'; //impt
+import PropTypes from 'prop-types';
 
 const Navbar = ({ icon, title }) => {
   return (
@@ -19,27 +19,27 @@ const Navbar = ({ icon, title }) => {
   );
 };
 
-/* class Navbar extends Component {
-  static defaultProps = {
-    title: 'ContribStats',
-    icon: 'fab fa-github'
-  };
+// class Navbar extends Component {
+//   static defaultProps = {
+//     title: 'ContribStats',
+//     icon: 'fab fa-github'
+//   };
 
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired
-  };
+//   static propTypes = {
+//     title: PropTypes.string.isRequired,
+//     icon: PropTypes.string.isRequired
+//   };
 
-  render() {
-    return (
-      <nav className='navbar bg-primary'>
-        <h1>
-          <i class={this.props.icon}></i> {this.props.title}
-        </h1>
-      </nav>
-    );
-  }
-} */
+//   render() {
+//     return (
+//       <nav className='navbar bg-primary'>
+//         <h1>
+//           <i class={this.props.icon}></i> {this.props.title}
+//         </h1>
+//       </nav>
+//     );
+//   }
+// }
 
 Navbar.defaultProps = {
   title: 'ContribStats',
