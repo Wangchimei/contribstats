@@ -1,11 +1,15 @@
 //rce
-import React, { useEffect, Fragment } from 'react';
+import React, { useEffect, useContext, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from '../layout/Spinner';
 import Repos from '../repos/Repos';
-import PropTypes from 'prop-types';
+import GithubContext from '../../context/github/githubContext';
 
-const User = ({ user, repos, loading, getUser, getRepos, match }) => {
+const User = ({ match }) => {
+  // CONTEXT: bring in loading and users
+  const githubContext = useContext(GithubContext);
+  const { user, loading, repos, getUser, getRepos } = githubContext;
+
   // useEffect will be trigger in any lifecycle, to mimic componentDidMount, use a [] as second function to make it only run once. if using [repos], means it triggers when repos changed. Using "eslint-disable-next-line" to get rid of the warning.
   useEffect(() => {
     getUser(match.params.login);
@@ -94,14 +98,6 @@ const User = ({ user, repos, loading, getUser, getRepos, match }) => {
       <Repos repos={repos} />
     </Fragment>
   );
-};
-
-User.propTypes = {
-  user: PropTypes.object.isRequired,
-  repos: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
-  getUser: PropTypes.func.isRequired,
-  getRepos: PropTypes.func.isRequired
 };
 
 export default User;

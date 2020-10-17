@@ -4,7 +4,7 @@ A profile viewing app for checking contribution on Github.
 
 ## Build with
 
-- React.js (React Routers)
+- React.js (Routers, Hooks, Context API)
 - GitHub REST API
 
 ## Getting Started
