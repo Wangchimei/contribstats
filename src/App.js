@@ -1,10 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  HashRouter
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users';
 import User from './components/users/User';
@@ -76,7 +71,7 @@ class App extends Component {
   render() {
     const { users, user, repos, loading, alert } = this.state;
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className='App'>
           <Navbar />
           <div className='container'>
@@ -84,7 +79,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path={process.env.PUBLIC_URL + '/'}
+                path='/'
                 render={(props) => (
                   <Fragment>
                     <Search
@@ -97,14 +92,10 @@ class App extends Component {
                   </Fragment>
                 )}
               />
+              <Route exact path='/about' component={About} />
               <Route
                 exact
-                path={process.env.PUBLIC_URL + '/about'}
-                component={About}
-              />
-              <Route
-                exact
-                path={process.env.PUBLIC_URL + '/user/:login'}
+                path='/user/:login'
                 render={(props) => (
                   <User
                     {...props}
