@@ -2,7 +2,7 @@
   "name": "profile-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wangchimei.github.io/contribstats/",
+  "homepage": "https://wangchimei.github.io/contribstats",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
