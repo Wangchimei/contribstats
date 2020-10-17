@@ -67,18 +67,14 @@ class App extends Component {
     }, 5000);
   };
 
+  // WITHOUT JSX
+  // return React.createElement(
+  //   'div',
+  //   { class: 'App' },
+  //   React.createElement('h1', null, 'Title')
+  // );
   render() {
     const { users, user, repos, loading, alert } = this.state;
-
-    /* WITHOUT JSX */
-
-    /* return React.createElement(
-      'div',
-      { class: 'App' },
-      React.createElement('h1', null, 'Title')
-    ); */
-
-    /* WITH JSX */
     return (
       <Router>
         <div className='App'>
