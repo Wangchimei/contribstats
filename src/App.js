@@ -1,6 +1,10 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter
+} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users';
 import User from './components/users/User';
@@ -65,9 +69,7 @@ class App extends Component {
 
   render() {
     const { users, user, repos, loading, alert } = this.state;
-    const history = createHistory({
-      basename: process.env.PUBLIC_URL
-    });
+
     //* WITHOUT JSX
     // return React.createElement(
     //   'div',
@@ -77,7 +79,7 @@ class App extends Component {
 
     //* WITH JSX
     return (
-      <ConnectedRouter history={history}>
+      <Router>
         <div className='App'>
           <Navbar />
           <div className='container'>
@@ -85,7 +87,7 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path='/'
+                path={process.env.PUBLIC_URL + '/'}
                 render={(props) => (
                   <Fragment>
                     <Search
@@ -98,10 +100,14 @@ class App extends Component {
                   </Fragment>
                 )}
               />
-              <Route exact path='/about' component={About} />
               <Route
                 exact
-                path='/user/:login'
+                path={process.env.PUBLIC_URL + '/about'}
+                component={About}
+              />
+              <Route
+                exact
+                path={process.env.PUBLIC_URL + '/user/:login'}
                 render={(props) => (
                   <User
                     {...props}
@@ -116,7 +122,7 @@ class App extends Component {
             </Switch>
           </div>
         </div>
-      </ConnectedRouter>
+      </Router>
     );
   }
 }

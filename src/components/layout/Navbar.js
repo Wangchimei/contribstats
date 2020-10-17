@@ -6,13 +6,13 @@ const Navbar = ({ icon, title }) => {
   return (
     <nav className='navbar bg-primary'>
       <h1>
-        <Link to='/'>
+        <Link to={process.env.PUBLIC_URL + '/'}>
           <i className={icon}></i> {title}
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to={process.env.PUBLIC_URL + '/about'}>About</Link>
         </li>
       </ul>
     </nav>
