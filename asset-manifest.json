@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/contribstats/static/css/main.86af76df.chunk.css",
-    "main.js": "/contribstats/static/js/main.99a39995.chunk.js",
-    "main.js.map": "/contribstats/static/js/main.99a39995.chunk.js.map",
-    "runtime-main.js": "/contribstats/static/js/runtime-main.2ee6da48.js",
-    "runtime-main.js.map": "/contribstats/static/js/runtime-main.2ee6da48.js.map",
-    "static/js/2.1f393c97.chunk.js": "/contribstats/static/js/2.1f393c97.chunk.js",
-    "static/js/2.1f393c97.chunk.js.map": "/contribstats/static/js/2.1f393c97.chunk.js.map",
-    "index.html": "/contribstats/index.html",
-    "precache-manifest.cf50d823b2d57fcbe949be5a50cbf776.js": "/contribstats/precache-manifest.cf50d823b2d57fcbe949be5a50cbf776.js",
-    "service-worker.js": "/contribstats/service-worker.js",
-    "static/css/main.86af76df.chunk.css.map": "/contribstats/static/css/main.86af76df.chunk.css.map",
-    "static/js/2.1f393c97.chunk.js.LICENSE.txt": "/contribstats/static/js/2.1f393c97.chunk.js.LICENSE.txt"
+    "main.css": "https://wangchimei.github.io/contribstats/static/css/main.86af76df.chunk.css",
+    "main.js": "https://wangchimei.github.io/contribstats/static/js/main.1b42c6ba.chunk.js",
+    "main.js.map": "https://wangchimei.github.io/contribstats/static/js/main.1b42c6ba.chunk.js.map",
+    "runtime-main.js": "https://wangchimei.github.io/contribstats/static/js/runtime-main.0dab6c0f.js",
+    "runtime-main.js.map": "https://wangchimei.github.io/contribstats/static/js/runtime-main.0dab6c0f.js.map",
+    "static/js/2.1f393c97.chunk.js": "https://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js",
+    "static/js/2.1f393c97.chunk.js.map": "https://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js.map",
+    "index.html": "https://wangchimei.github.io/contribstats/index.html",
+    "precache-manifest.891e1d29d13a408b921a53dd1b230d1f.js": "https://wangchimei.github.io/contribstats/precache-manifest.891e1d29d13a408b921a53dd1b230d1f.js",
+    "service-worker.js": "https://wangchimei.github.io/contribstats/service-worker.js",
+    "static/css/main.86af76df.chunk.css.map": "https://wangchimei.github.io/contribstats/static/css/main.86af76df.chunk.css.map",
+    "static/js/2.1f393c97.chunk.js.LICENSE.txt": "https://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ee6da48.js",
+    "static/js/runtime-main.0dab6c0f.js",
     "static/js/2.1f393c97.chunk.js",
     "static/css/main.86af76df.chunk.css",
-    "static/js/main.99a39995.chunk.js"
+    "static/js/main.1b42c6ba.chunk.js"
   ]
 }
