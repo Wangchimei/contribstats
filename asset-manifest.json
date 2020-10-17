@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "http://localhost:3000/static/css/main.86af76df.chunk.css",
-    "main.js": "http://localhost:3000/static/js/main.3bd7b00a.chunk.js",
-    "main.js.map": "http://localhost:3000/static/js/main.3bd7b00a.chunk.js.map",
-    "runtime-main.js": "http://localhost:3000/static/js/runtime-main.a8b88c17.js",
-    "runtime-main.js.map": "http://localhost:3000/static/js/runtime-main.a8b88c17.js.map",
-    "static/js/2.1f393c97.chunk.js": "http://localhost:3000/static/js/2.1f393c97.chunk.js",
-    "static/js/2.1f393c97.chunk.js.map": "http://localhost:3000/static/js/2.1f393c97.chunk.js.map",
-    "index.html": "http://localhost:3000/index.html",
-    "precache-manifest.00e4a2f2ca25da0a8797ef94be09ef41.js": "http://localhost:3000/precache-manifest.00e4a2f2ca25da0a8797ef94be09ef41.js",
-    "service-worker.js": "http://localhost:3000/service-worker.js",
-    "static/css/main.86af76df.chunk.css.map": "http://localhost:3000/static/css/main.86af76df.chunk.css.map",
-    "static/js/2.1f393c97.chunk.js.LICENSE.txt": "http://localhost:3000/static/js/2.1f393c97.chunk.js.LICENSE.txt"
+    "main.css": "http://wangchimei.github.io/contribstats/static/css/main.86af76df.chunk.css",
+    "main.js": "http://wangchimei.github.io/contribstats/static/js/main.ec2d0cf7.chunk.js",
+    "main.js.map": "http://wangchimei.github.io/contribstats/static/js/main.ec2d0cf7.chunk.js.map",
+    "runtime-main.js": "http://wangchimei.github.io/contribstats/static/js/runtime-main.8faf2837.js",
+    "runtime-main.js.map": "http://wangchimei.github.io/contribstats/static/js/runtime-main.8faf2837.js.map",
+    "static/js/2.1f393c97.chunk.js": "http://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js",
+    "static/js/2.1f393c97.chunk.js.map": "http://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js.map",
+    "index.html": "http://wangchimei.github.io/contribstats/index.html",
+    "precache-manifest.8eea76f20c8b9b44e0f37b7cf3b7456e.js": "http://wangchimei.github.io/contribstats/precache-manifest.8eea76f20c8b9b44e0f37b7cf3b7456e.js",
+    "service-worker.js": "http://wangchimei.github.io/contribstats/service-worker.js",
+    "static/css/main.86af76df.chunk.css.map": "http://wangchimei.github.io/contribstats/static/css/main.86af76df.chunk.css.map",
+    "static/js/2.1f393c97.chunk.js.LICENSE.txt": "http://wangchimei.github.io/contribstats/static/js/2.1f393c97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8b88c17.js",
+    "static/js/runtime-main.8faf2837.js",
     "static/js/2.1f393c97.chunk.js",
     "static/css/main.86af76df.chunk.css",
-    "static/js/main.3bd7b00a.chunk.js"
+    "static/js/main.ec2d0cf7.chunk.js"
   ]
 }
