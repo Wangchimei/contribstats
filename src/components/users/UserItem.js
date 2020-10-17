@@ -23,7 +23,10 @@ const UserItem = ({ user: { id, login, avatar_url, html_url } }) => {
         style={{ width: '100px' }}
       />
       <h3>{login}</h3>
-      <Link to={`/user/${login}`} className='btn btn-dark btn-sm my-1'>
+      <Link
+        to={`${process.env.PUBLIC_URL}/user/${login}`}
+        className='btn btn-dark btn-sm my-1'
+      >
         More
       </Link>
     </div>
